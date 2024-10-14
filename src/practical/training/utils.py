@@ -99,3 +99,18 @@ class FocalLoss(nn.Module):
             return loss.mean()
         else: 
             return loss.sum()
+        
+
+import copy
+def save_model(model):
+    """
+    return a copy of the state_dict of the model
+    """
+    return copy.deepcopy(model.state_dict())
+
+
+def load_model(model, state_dict):
+    """
+    load the state_dict into the model
+    """
+    return model.load_state_dict(state_dict)
