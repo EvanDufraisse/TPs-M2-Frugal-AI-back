@@ -15,5 +15,5 @@ dependencies = [
 requires-python = ">=3.8"
 
 [tool.setuptools]
-packages = ["practical"]
+packages = { find = { where = ["src"] } }
 package-dir = {"" = "src"}
