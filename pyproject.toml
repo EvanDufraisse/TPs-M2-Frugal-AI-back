@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "practical"
+version = "0.1.0"
+description = "practical: "
+authors = [{ name = "Evan Dufraisse", email = "evan.dufraisse@cea.fr" }]
+dependencies = [
+    "tqdm",
+    "loguru",
+    "ipykernel"
+]
+requires-python = ">=3.8"
+
+[tool.setuptools]
+packages = ["practical"]
+package-dir = {"" = "src"}
